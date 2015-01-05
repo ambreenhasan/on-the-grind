@@ -311,41 +311,6 @@
         1,
         null
       ],
-      "/Users/ambodumbo/Documents/Projects/on-the-grind/db/schema.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
       "/Users/ambodumbo/Documents/Projects/on-the-grind/app/controllers/jobs_controller.rb": [
         1,
         null
@@ -386,6 +351,6 @@
         null
       ]
     },
-    "timestamp": 1420436667
+    "timestamp": 1420437025
   }
 }
