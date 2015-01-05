@@ -15,12 +15,5 @@ RSpec.describe JobsController, :type => :controller do
     it "delete a job" do
     end
   end
-
-  # visit home page and see an option to sign in
-  # to add a job based on critera
-  # delete a job
-  # edit a job
-  # update a job
-
 end
 
