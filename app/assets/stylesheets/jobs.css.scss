@@ -1,3 +1,27 @@
 // Place all the styles related to the jobs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
+body {
+  background-color: #ECF0F1;
+  font-family: 'Lato', sans-serif;
+}
+
+.first-word-of-title {
+  margin-top: 20px;
+}
+
+.title {
+  color: #16A085;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header {
+  border-bottom: 1px solid #BDC3C7;
+  margin-bottom: 35px;
+}
