@@ -11,7 +11,7 @@ RSpec.describe JobsController, :type => :controller do
   context "#new" do
     it "assigns @job to Job.new" do
       get :new
-      expect(assigns(:job)).to eq Job.new
+      expect(assigns(:job)).to be_a_new(Job)
     end
     it "renders the new template" do
       get :new
