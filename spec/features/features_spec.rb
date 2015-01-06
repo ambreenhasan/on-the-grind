@@ -29,3 +29,5 @@ feature "User can sign in" do
   scenario "and see a list of jobs they have added" do
   end
 end
+
+# User visits the homepage and is able to sign in
