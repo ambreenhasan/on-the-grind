@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+status = ["Haven't Applied Yet", "In Process", "Applied/Contacted", "Didn't Work Out", "Have to Jump Through a Hoop to Apply", "Dead Track", "Have a Connection", "When Desperate", "Sent Follow Up"]
+
+
+10.times do
+Job.create(company_name: Faker::Company.name, link: Faker::Internet.url, title: Faker::Name.title, location: Faker::Address.city, status: status.sample,note: Faker::Lorem.sentence, contact_name: Faker::Name.name, contact_number: Faker::PhoneNumber.phone_number, intrigue_level: rand(1...10))
+end

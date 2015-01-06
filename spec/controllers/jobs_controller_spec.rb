@@ -2,11 +2,12 @@ require 'rails_helper'
 
 RSpec.describe JobsController, :type => :controller do
   describe "A user can" do
-    it "visit the home page and view all jobs" do
-      visit jobs_path
-      page.should have_content "All job listings"
+    it "visit the home page and see a list of jobs" do
+      visit '/'
+      expect(page).to have_content "All job listings"
     end
-    it "add a job to the list" do
+    it "create a job" do
+      job = FactoryGirl.create(:job)
     end
     it "edit a job" do
     end

@@ -8,8 +8,10 @@
         1,
         1,
         1,
-        0,
         null,
+        null,
+        null,
+        1,
         1,
         null,
         1,
@@ -53,6 +55,7 @@
         null,
         1,
         null,
+        1,
         1,
         null,
         null,
@@ -240,8 +243,15 @@
       "/Users/ambodumbo/Documents/Projects/on-the-grind/spec/factories/jobs.rb": [
         1,
         1,
-        null,
-        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -251,7 +261,7 @@
         null,
         null,
         null,
-        null,
+        1,
         null,
         null,
         null,
@@ -315,6 +325,10 @@
       ],
       "/Users/ambodumbo/Documents/Projects/on-the-grind/app/controllers/jobs_controller.rb": [
         1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/ambodumbo/Documents/Projects/on-the-grind/app/controllers/application_controller.rb": [
@@ -353,6 +367,6 @@
         null
       ]
     },
-    "timestamp": 1420439413
+    "timestamp": 1420508816
   }
 }
