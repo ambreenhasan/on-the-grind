@@ -22,9 +22,17 @@ class JobsController < ApplicationController
   end
 
   def update
+    @job = Job.find(params[:id])
+    if @job.update(job_params)
+      redirect_to root_path
+    else
+      render "edit"
+    end
   end
 
   def destroy
+    @job = Job.find(params[:id])
+    redirect_to root_path if @job.destroy
   end
 
   private

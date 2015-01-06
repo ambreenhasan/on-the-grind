@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe JobsController, :type => :controller do
+
   context "#index" do
     it "loads all jobs into @jobs" do
       get :index
@@ -61,7 +62,7 @@ RSpec.describe JobsController, :type => :controller do
     it "with invalid params" do
       job = FactoryGirl.create(:job)
       patch :update, id: job.id, job: {tile: ""}
-       expect(response).to render_template "edit"
+      expect(response).to render_template "edit"
     end
   end
 
