@@ -9,16 +9,21 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.first-word-of-title {
-  margin-top: 20px;
-}
-
 .title {
+  margin-top: 20px;
   color: #16A085;
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.tagline {
+  float: right;
+  color: #222;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .header {
