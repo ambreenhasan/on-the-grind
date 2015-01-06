@@ -321,6 +321,15 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/ambodumbo/Documents/Projects/on-the-grind/config/routes.rb": [
@@ -417,11 +426,8 @@
         null,
         1,
         2,
-        2,
-        2,
         null,
-        0,
-        null,
+        2,
         null,
         null,
         1,
@@ -474,6 +480,6 @@
         null
       ]
     },
-    "timestamp": 1420517138
+    "timestamp": 1420525425
   }
 }

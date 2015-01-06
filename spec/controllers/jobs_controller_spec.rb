@@ -61,7 +61,7 @@ RSpec.describe JobsController, :type => :controller do
 
     it "with invalid params" do
       job = FactoryGirl.create(:job)
-      patch :update, id: job.id, job: {tile: ""}
+      patch :update, id: job.id, job: FactoryGirl.attributes_for(:invalid_job)
       expect(response).to render_template "edit"
     end
   end
