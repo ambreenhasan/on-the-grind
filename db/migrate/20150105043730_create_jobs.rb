@@ -10,6 +10,7 @@ class CreateJobs < ActiveRecord::Migration
       t.string :contact_name
       t.string :contact_number
       t.integer :intrigue_level, default: 0
+      t.integer :user_id
 
 
       t.timestamps
