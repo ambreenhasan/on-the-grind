@@ -29,7 +29,7 @@ RSpec.describe JobsController, :type => :controller do
 
     it "with invalid params" do
       expect {
-        post :create, :job => ""
+        post :create, :job => {company_name: "hello", title: ""}
         expect(response).to_not be_redirect
       }.to_not change { Job.count }
     end
