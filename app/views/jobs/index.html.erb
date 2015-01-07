@@ -12,19 +12,37 @@
 
     <br>
 
-<ul>
 <% @jobs.each do |job| %>
-<li><%= job.company_name %></li>
-<li><%= job.link %></li>
-<li><%= job.title %></li>
-<li><%= job.location %></li>
-<li><%= job.status %></li>
-<li><%= job.note %></li>
-<li><%= job.contact_name %></li>
-<li><%= job.contact_number %></li>
-<li><%= job.intrigue_level %></li>
-<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Company Name</th>
+            <th>Link</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Notes</th>
+            <th>Contact Name</th>
+            <th>Contact Number</th>
+            <th>Intrigue Level(1-10)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= job.company_name %></td>
+            <td><%= job.link %></td>
+            <td><%= job.title %></td>
+            <td><%= job.location %></td>
+            <td><%= job.status %></td>
+            <td><%= job.note %></td>
+            <td><%= job.contact_name %></td>
+            <td><%= job.contact_number %></td>
+            <td><%= job.intrigue_level %></td>
+        </tr>
+    </tbody>
+</table>
 <% end %>
-</ul>
 
 </div>
+
+
