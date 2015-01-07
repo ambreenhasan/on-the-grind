@@ -30,7 +30,7 @@
     <tbody>
         <tr>
             <td><%= job.company_name %></td>
-            <td><%= job.link %></td>
+            <td><%= link_to content_tag(:i,nil, :class=>"fa fa-external-link"), job.link %></td>
             <td><%= job.title %></td>
             <td><%= job.location %></td>
             <td><%= job.status %></td>
