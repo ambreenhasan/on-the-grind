@@ -14,4 +14,5 @@
  *= require ../../../vendor/assets/stylesheets/bootstrap-theme
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
