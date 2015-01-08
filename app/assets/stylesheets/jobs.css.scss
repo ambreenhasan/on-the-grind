@@ -30,3 +30,12 @@ body {
   border-bottom: 1px solid #BDC3C7;
   margin-bottom: 35px;
 }
+
+div.well {
+  background: rgba(22, 160, 133, 0.9);
+  border: none;
+}
+
+div.well:hover {
+  background: rgba(22, 160, 133, 0.6);
+}

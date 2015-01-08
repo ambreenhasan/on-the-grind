@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ../../../vendor/assets/javascripts/isotope.pkgd.min
 //= require ../../../vendor/assets/javascripts/bootstrap
 //= require_tree .
