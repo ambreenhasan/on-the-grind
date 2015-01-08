@@ -35,7 +35,7 @@
 <% @jobs.each do |job| %>
     <div class="container_two">
         <div class="row-fluid">
-            <div class="col-xs-6 col-md-4 item"><div class="well text-center data-status="<%=job.status %>"><%= job.company_name %> <br><%= job.title %> <br> <%= job.location %> </div></div>
+            <div class="col-xs-6 col-md-4 item box"><a href="/jobs/<%= job.id %>"><div class="well text-center data-status="<%=job.status %>"><%= job.company_name %> <br><%= job.title %> <br> <%= job.location %> </div></a></div>
         </div>
     </div>
 <% end %>

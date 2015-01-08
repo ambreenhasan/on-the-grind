@@ -57,3 +57,11 @@ div.well:hover {
 .options {
   padding-bottom: 50px;
 }
+
+.box a:link, a:visited {
+  color: #222;
+}
+
+.box a:hover {
+  text-decoration: none;
+}
