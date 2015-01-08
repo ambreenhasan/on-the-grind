@@ -9,13 +9,27 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.title {
-  margin-top: 20px;
-  color: #16A085;
+nav {
+  position: fixed;
+  border: none;
+
+}
+
+.navbar-brand {
+  color: #16A085 !important;
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.navbar-default {
+  border: none;
+  background-color: inherit;
+  background-image: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom: 1px solid #BDC3C7;
 }
 
 .tagline {
@@ -27,7 +41,7 @@ body {
 }
 
 .header {
-  border-bottom: 1px solid #BDC3C7;
+
   margin-bottom: 35px;
 }
 
@@ -38,4 +52,8 @@ div.well {
 
 div.well:hover {
   background: rgba(22, 160, 133, 0.6);
+}
+
+.options {
+  padding-bottom: 50px;
 }
