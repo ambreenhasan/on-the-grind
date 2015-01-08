@@ -9,7 +9,7 @@
 status = ["Haven't Applied Yet", "In Process", "Applied/Contacted", "Didn't Work Out", "Dead Track", "Have a Connection", "When Desperate", "Sent Follow Up"]
 
 
-10.times do
-  Job.create(company_name: Faker::Company.name, link: Faker::Internet.url, title: Faker::Name.title, location: Faker::Address.city, status: status.sample,note: Faker::Lorem.sentence, contact_name: Faker::Name.name, contact_number: Faker::PhoneNumber.phone_number, intrigue_level: rand(1...10), user_id: 1)
+9.times do
+  Job.create(company_name: Faker::Company.name, link: Faker::Internet.url, job_title: Faker::Name.title, location: Faker::Address.city, status: status.sample,note: Faker::Lorem.sentence, contact_email: Faker::Internet.email, intrigue_level: rand(1...10), user_id: 1)
 end
 
