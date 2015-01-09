@@ -15,10 +15,15 @@ class JobsController < ApplicationController
 
     respond_to do |format|
       if @job.save
+        p params
         format.html { redirect_to root_path, notice: 'job was successfully created.' }
-        format.js   { render :create, status: :created, location: @job }
+        format.json { render json: @job, status: :created }
+        format.js   { render json: @job, status: :created }
       else
-        format.html { render action: 'new' }
+        p params
+        p @job.errors
+        format.html { render "new" }
+        format.json { render json: @job.errors, status: :unprocessable_entity }
         format.js   { render json: @job.errors, status: :unprocessable_entity }
       end
     end
