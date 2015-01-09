@@ -12,7 +12,16 @@ class JobsController < ApplicationController
 
   def create
     @job = Job.new(job_params)
-    redirect_to root_path if @job.save
+
+    respond_to do |format|
+      if @job.save
+        format.html { redirect_to root_path, notice: 'job was successfully created.' }
+        format.js   { render :create, status: :created, location: @job }
+      else
+        format.html { render action: 'new' }
+        format.js   { render json: @job.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def show
@@ -36,7 +45,7 @@ class JobsController < ApplicationController
 
   private
   def job_params
-    params.require(:job).permit(:company_name, :link, :title, :location, :status, :note, :contact_name, :contact_number, :intrigue_level)
+    params.require(:job).permit(:company_name, :link, :job_title, :location, :status, :note, :contact_email, :intrigue_level)
   end
 end
 
