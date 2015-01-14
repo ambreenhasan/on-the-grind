@@ -2,7 +2,7 @@ class JobsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @jobs = Job.all
+    @jobs = Job.all.order(created_at: :desc)
     @job = Job.new
   end
 
@@ -15,7 +15,7 @@ class JobsController < ApplicationController
 
     respond_to do |format|
       if @job.save
-        format.html { redirect_to root_path, notice: 'job was successfully created.' }
+        format.html { redirect_to jobs_path, notice: 'job was successfully created.' }
         format.json { render json: @job, status: :created }
         format.js   {}
       else
